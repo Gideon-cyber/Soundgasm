@@ -1,0 +1,8 @@
+Font used: Aleo
+
+NAVIGATION
+Soundgasm: font size = 22(bold), color= 99BAD0
+Discover/charts: color=99BAD0 , font size = 18(bold)
+Search: font size= 18(regular), color= ffffff 66%; rectangle ffffff 20%
+
+Join Now: font size = 24(bold), color=6497B8

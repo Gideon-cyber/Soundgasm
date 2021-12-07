@@ -1,0 +1,19 @@
+.topnav {
+	background-color: #000000;
+}
+
+
+.main-nav {
+	display: flex;
+	list-style: none;
+}
+
+li {
+	padding: 20px;
+}
+
+a {
+	color: #99bad0;
+	text-decoration: none;
+	font-weight: bold;
+}
