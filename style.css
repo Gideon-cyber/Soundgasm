@@ -1,3 +1,10 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Aleo', serif;
+}
+
 .topnav {
 	background-color: #000000;
 }
@@ -8,12 +15,48 @@
 	list-style: none;
 }
 
+.push {
+	display: inline-flex;
+	padding-right: 2.5rem;
+	margin-left: auto;
+}
+
 li {
 	padding: 20px;
+	display: grid;
+	align-items: center;
 }
 
 a {
 	color: #99bad0;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+#logo {
+	display: inline-flex;
+	width: 50px;
+	height: 40px;
+	margin: 0;
+}
+
+.nav-bar {
+	padding: 20px;
+	padding-right: 0px;
+	display: grid;
+	align-items: center;
+}
+
+.search {
+	background-color: #99bad0;
+	padding: 8px;
+	margin: 1px;
+	display: inline-flex;
+	align-self: center;
+}
+
+#icon {
+	display: grid;
+	width: 15px;
+	height: 15px;
 }
