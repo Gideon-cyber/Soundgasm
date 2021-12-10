@@ -17,12 +17,20 @@ html {
 
 .push {
 	display: inline-flex;
-	padding-right: 2.5rem;
 	margin-left: auto;
 	color: #99bad0;
 }
 
+.padding {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
+	color: #99bad0;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
 	color: #99bad0;
 }
 
@@ -70,6 +78,20 @@ a {
 	height: 15px;
 }
 
+.navbar button {
+	display: inline-flex;
+}
+
+.navbar button.navbar-toggler {
+	border: 1px solid #90bad0;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar {
+		padding: 0px;
+	}
+}
+
 @media only screen and (max-width: 991px) {
 	.main-nav {
 		font-size: 1rem;
@@ -80,10 +102,3 @@ a {
 	}
 }
 
-.navbar button {
-	display: inline-flex;
-}
-
-.navbar button.navbar-toggler {
-	border: 1px solid #90bad0;
-}
