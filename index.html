@@ -20,7 +20,8 @@
                     <span>Soundgasm</span>
                 </a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <img src="images/icons-close.png" alt="close menu icon" class="menu-icons close" onclick="hideMenu()">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Release</a></li>
@@ -29,6 +30,8 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <img src="images/icons-menu.png" alt="menu icon" class="menu-icons b-hamburger" onclick="showMenu()">
+            <img src="images/icons-menu1.png" alt="menu icon" class="menu-icons w-hamburger" onclick="showMenu()">
         </nav>
 
         <div class="content">
@@ -41,6 +44,18 @@
         </div>
     </section>
 
+
+<!---------Javascript for toogle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-160px";
+        }
+    </script>
 
 </body>
 </html>

@@ -172,7 +172,28 @@ p.slide-left{
     background-color: rgba(255, 255, 255, 1);
 }
 
+nav img.menu-icons{
+    display: none;
+}
+
 @media (max-width: 700px){
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+    .nav-links ul li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        display: block;
+        background-color: #333;
+        margin: center;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li a:hover::after{
+        width: 50%;
+    }
+
     .content{
         width: 75%;
         color: #ffffff;
@@ -195,14 +216,41 @@ p.slide-left{
 
     .nav-links{
         position: absolute;
-        background: #99bad0;
-        width: 200px;
+        background: #fff;
+        width: 160px;
         top: 0;
-        right: 0;
+        right: -160px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
     
+    .nav-links ul{
+        padding: 20px;
+    }
+
+    .nav-links ul li a{
+        color: #333;
+    }
+
+    nav img.menu-icons{
+        display: block;
+        margin: 10px;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    nav img.b-hamburger{
+        display: none;
+    }
+
+    nav:hover img.b-hamburger{
+        display: block;
+    } 
+
+    nav:hover img.w-hamburger{
+        display: none;
+    }
 }
 
 
