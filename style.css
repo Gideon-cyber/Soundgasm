@@ -120,13 +120,13 @@ nav:hover .logo img.b-logo{
     font-variant: small-caps;
 } */
 
-h1{
+.content h1{
     font-size: 80px;
     margin: 8px 0 13px;
     line-height: 80px;
 }
 
-p{
+.content p{
     opacity: 0;
 }
 
@@ -176,6 +176,52 @@ nav img.menu-icons{
     display: none;
 }
 
+.releases{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.releases h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.releases p{
+    color: rgb(95, 95, 95);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 10px;
+}
+
+div.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.newMusic{
+    width: 31%;
+    margin-bottom: 5%;
+}
+
+.newMusic img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+/********** For small screen devices **********/
+
 @media (max-width: 700px){
     .nav-links ul li:hover::after{
         width: 0%;
@@ -204,7 +250,7 @@ nav img.menu-icons{
         text-align: center;
     }
 
-    h1{
+    .content h1{
         font-size: 40px;
         margin: 4px 0 9px;
         line-height: 50px;
