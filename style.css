@@ -103,9 +103,6 @@ nav:hover .logo img.b-logo{
 }
 
 .content{
-    /* margin-top: 6%;
-    margin-left: 6%;
-    color: #99bad0; */
     color: #ffffff;
     position: absolute;
     top: 50%;
@@ -113,12 +110,6 @@ nav:hover .logo img.b-logo{
     transform: translateY(-50%); /*To align text at the center left of the page*/
     z-index: 2;
 }
-
-/* .content p{
-    font-size: 25px;
-    font-weight: 300;
-    font-variant: small-caps;
-} */
 
 .content h1{
     font-size: 80px;
@@ -176,11 +167,13 @@ nav img.menu-icons{
     display: none;
 }
 
+/********new Music today page*********/
+
 .releases{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .releases h1{
@@ -196,23 +189,37 @@ nav img.menu-icons{
     padding: 10px;
 }
 
-div.row{
+/*Adding sliding carousel to New music page*/
+div.main-carousel{
     margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
 }
 
-div.newMusic{
-    width: 31%;
+div.carousel-cell{
+    width: 66%;
+    height: 400px;
     margin-bottom: 5%;
+    margin-right: 10px;
+    overflow: hidden;
+    counter-increment: gallery-cell;
 }
 
-.newMusic img{
+.carousel-cell img{
     width: 100%;
+    height: 400px;
     border-radius: 15px;
-
+    object-fit: cover;   /*To make image fit into box size and maintain near original look*/
 }
 
+/* img.newMusic{
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    color: #333;
+    text-align: left;
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+} */
 
 
 
@@ -299,5 +306,31 @@ div.newMusic{
     }
 }
 
+
+/********new Music today page*********/
+.releases{
+    padding-top: 40px;
+}
+
+.releases h1{
+    font-size: 24px;
+}
+
+.releases p{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px;
+}
+
+/*Adding sliding carousel to New music page*/
+div.carousel-cell{
+    height: 200px;
+    margin-right: 5px;
+}
+
+.carousel-cell img{
+    height: 200px;
+    border-radius: 10px;
+}
 
 

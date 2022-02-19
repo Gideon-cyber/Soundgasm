@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <section class="header">
@@ -35,7 +37,6 @@
         </nav>
 
         <div class="content">
-            <!-- <p>Find Warmth in</p> -->
             <h1 class="slide-left">Find Warmth<br>in Good Music</h1>
             <p class="slide-left">Listen to your favorite musicians today</p>
             <div class="button slide-left">
@@ -48,24 +49,36 @@
         <h1>New Music Out Today!</h1>
         <p>Listen to latest hits and bangers from top artists around the world</p> 
 
-        <div class="row">
-            <div class="newMusic"><img src="images/Nmusic1.jpg" alt=""></div>
-            <div class="newMusic"><img src="images/Nmusic1.jpg" alt=""></div>
-            <div class="newMusic"><img src="images/Nmusic1.jpg" alt=""></div>
-        </div>
+        <div class="main-carousel">
+            <div class="carousel-cell"><img src="images/Adele1.jpg" alt=""><p class="newMusic"></p></div>
+            <div class="carousel-cell"><img src="images/Shawn1.jpg" alt=""><p class="newMusic"></p></div>
+            <div class="carousel-cell"><img src="images/Beyonce.jpg" alt=""><p class="newMusic"></p></div>
+            <div class="carousel-cell"><img src="images/Charlie P2.png" alt=""><p class="newMusic"></p></div>
+            <div class="carousel-cell"><img src="images/Christina1.jpg" alt=""><p class="newMusic"></p></div>
+            <div class="carousel-cell"><img src="images/Ed.jpg" alt=""><p class="newMusic"></p></div>
+          </div>
     </section>
 
 
 <!---------Javascript for toogle menu-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
         var navLinks = document.getElementById("navLinks");
 
         function showMenu(){
-            navLinks.style.right ="0";
+            navLinks.style.right ="0";  
         }
         function hideMenu(){
             navLinks.style.right ="-160px";
         }
+
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true,  //makes carousel scrollable
+            autoPlay: true  //makes carousel self scrollable
+        });
     </script>
 
 </body>
