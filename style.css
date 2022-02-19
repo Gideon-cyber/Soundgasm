@@ -304,33 +304,36 @@ div.carousel-cell{
     nav:hover img.w-hamburger{
         display: none;
     }
+
+
+    /********new Music today page*********/
+    .releases{
+        padding-top: 40px;
+    }
+
+    .releases h1{
+        font-size: 24px;
+    }
+
+    .releases p{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 6px;
+    }
+
+    /*Adding sliding carousel to New music page*/
+    div.carousel-cell{
+        height: 200px;
+        margin-right: 5px;
+    }
+
+    .carousel-cell img{
+        height: 200px;
+        border-radius: 10px;
+    }
 }
 
 
-/********new Music today page*********/
-.releases{
-    padding-top: 40px;
-}
 
-.releases h1{
-    font-size: 24px;
-}
-
-.releases p{
-    font-size: 14px;
-    line-height: 14px;
-    padding: 6px;
-}
-
-/*Adding sliding carousel to New music page*/
-div.carousel-cell{
-    height: 200px;
-    margin-right: 5px;
-}
-
-.carousel-cell img{
-    height: 200px;
-    border-radius: 10px;
-}
 
 
