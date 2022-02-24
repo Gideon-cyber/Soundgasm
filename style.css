@@ -271,26 +271,20 @@ div.carousel-cell div.newMusic .star{
 
 div.top-songs{
     width: 100%;
-    height: 500px;
     margin: auto;
     margin-top: 4%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     background-color: rgba(255, 255, 255, 0.8);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'img-gos img-hip img-rnb'
+        'img-jazz img-jazz ';
 }
 
-div.gospel-hip{
-    width: 66%;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-    margin-right: auto;
-    overflow: hidden;
-}
 
 div.gospel{
-    width: 50%;
+    width: 100%;
 }
 
 div.gospel img{
@@ -301,7 +295,7 @@ div.gospel img{
 }
 
 div.hip-hop{
-    width: 50%;
+    width: 100%;
 }
 
 div.hip-hop img{
@@ -313,8 +307,8 @@ div.hip-hop img{
 }
 
 div.jazz{
-    width: 66%;
-    display: flex;
+    width: 100%;
+    /* display: flex; */
 }
 
 div.jazz img{
@@ -323,23 +317,48 @@ div.jazz img{
     border-radius: 15px;
     object-fit: cover;    /*To make image fit into box size and maintain near original look*/
     padding: 5px;
-    position: relative;
-    top: -99%;
+    padding-top: 0;
 }
 
 div.rnb{
-    width: 33%;
-    display: flex;
+    width: 100%;
+    /* display: flex; */
     margin-right: auto;
 }
 
 div.rnb img{
     width: 100%;
-    height: 500px;
+    height: 250px;
     border-radius: 15px;
+    object-fit: cover;  /*To make image fit into box size and maintain near original look*/
     padding: 5px;
     margin-right: auto;
 }
+
+div.gospel img.img-gos{
+    grid-area: img-gos; /* grid area property makes it easy to arrange items in grid columns the exact way you want it, even it involves spanning several columns or rows*/
+}
+
+div.hip-hop img.img-hip{
+    grid-area: img-hip;
+}
+
+div.rnb img.img-rnb{
+    grid-area: img-rnb;
+    min-height: 198%;
+}
+
+div.jazz img.img-jazz{
+    grid-area: img-jazz;
+    min-width: 200%;
+}
+
+div.top-songs a{
+    transition: 0.5s;
+}
+
+
+
 
 
 
@@ -465,6 +484,72 @@ div.rnb img{
     div.carousel-cell div.newMusic .star{
         top: 37%;
         height: 24%;
+    }
+
+
+    /***************Top charts page********************/
+
+    .charts{
+        padding-top: 40px;
+    }
+
+    .charts h3{
+        font-size: 24px;
+    }
+
+    .charts p{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 6px;
+    }
+
+    div.top-songs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            'img-gos img-hip'
+            'img-rnb img-jazz';
+    }
+
+    div.gospel{
+        width: 100%;
+    }
+
+    div.gospel img{
+        height: 150px;
+    }
+
+    div.hip-hop {
+        width: 100%;
+    }
+
+    div.hip-hop img{
+        height: 150px;
+    }
+
+    div.rnb{
+        width: 100%;
+    }
+
+    div.rnb img{
+        height: 150px;
+        padding-top: 0;
+    }
+
+    div.jazz{
+        width: 100%;
+    }
+
+    div.jazz img{
+        height: 150px;
+    }
+
+    div.rnb img.img-rnb{
+        min-height: 50%;
+    }
+
+    div.jazz img.img-jazz{
+        min-width: 100%;
     }
 }
 
