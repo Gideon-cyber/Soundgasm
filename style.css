@@ -396,8 +396,66 @@ div.tc-hover:hover h3{
     opacity: 1;
 }
 
+/*-- ----------Testimonials web section--------- -- */
 
+section.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
+section.testimonials h3{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+section.testimonials p{
+    color: rgb(95, 95, 95);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 10px;
+}
+
+div.row{
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.testimonial-col{
+    display: flex;
+    flex-basis: 48%;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 25px;
+    background: #333;
+    cursor: pointer;
+}
+
+div.testimonial-col img{
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+div.testimonial-col p{
+    color: #fff;
+    line-height: 18px;
+    padding: 0;
+    font-weight: 300;
+}
+
+div.testimonial-col h3{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
 
 
 
@@ -487,11 +545,11 @@ div.tc-hover:hover h3{
 
     /********new Music today page*********/
     .releases{
-        padding-top: 40px;
+        padding-top: 60px;
     }
 
     .releases h2{
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .releases p{
@@ -531,11 +589,11 @@ div.tc-hover:hover h3{
     /***************Top charts page********************/
 
     .charts{
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .charts h3{
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .charts p{
@@ -596,12 +654,15 @@ div.tc-hover:hover h3{
     }
 
     /************Adding transparent hover feature on each music genre************/
+
     div.tc-hover{
         background: rgba(211, 213, 218, 0.801);
-        height: 22%;
-        width: 97.7%;
-        bottom: 6px;
+        height: 20%;
+        width: 95%;
+        bottom: 7px;
         left: 3px;
+        margin: auto;
+        border-radius: 10px;
     }
 
     div.tc-hover:hover{
@@ -609,8 +670,8 @@ div.tc-hover:hover h3{
     }
 
     div.tc-hover h3{
-        font-size: 14px;
-        bottom: 49%;
+        font-size: 12px;
+        top: 30%;
     }
 
     div.tc-hover:hover h3{
@@ -625,6 +686,21 @@ div.tc-hover:hover h3{
         font-size: 14px;
         opacity: 1;
         bottom: 49%;
+    }
+
+    /*-- ----------Testimonials web section--------- -- */
+    section.testimonials{
+        padding-top: 60px;
+    }
+
+    section.testimonials h3{
+        font-size: 30px;
+    }
+
+    section.testimonials p{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 6px;
     }
 }
 
