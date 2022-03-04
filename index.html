@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <section class="header">
+    <section class="header" id="home">
         <nav>
             <div class="logo">
                 <a href="index.html">
@@ -25,11 +25,11 @@
             <div class="nav-links" id="navLinks">
                 <img src="images/icons-close.png" alt="close menu icon" class="menu-icons close" onclick="hideMenu()">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Release</a></li>
-                    <li><a href="#">Charts</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#release">Release</a></li>
+                    <li><a href="#charts">Charts</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <img src="images/icons-menu.png" alt="menu icon" class="menu-icons b-hamburger" onclick="showMenu()">
@@ -47,7 +47,7 @@
 
 <!----------------new Music today page----------- -->
 
-    <section class="releases">
+    <section class="releases" id="release">
         <h2>New Music Out Today!</h2>
         <p>Listen to latest hits and bangers from top artists around the world</p> 
 
@@ -62,7 +62,7 @@
     </section>
 
 <!-- ----------Top charts web section--------- -->
-    <section class="charts">
+    <section class="charts" id="charts">
         <h3>Top Charts</h3>
         <p>Top music of different genres</p>
 
@@ -123,6 +123,27 @@
                     <h3>GidTalker</h3>
                 </div>
             </div>
+        </div>
+    </section>
+
+<!-- ----------Contact Us Web Section--------- -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-text">
+                    <h3>Contact<br>Us</h3>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" id="name" placeholder="Your name here" required>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <input type="text" id="phone" placeholder="Phone number" required>
+                    <textarea id="message" rows="6" placeholder="Type your message here"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="box"></div>
         </div>
     </section>
 
